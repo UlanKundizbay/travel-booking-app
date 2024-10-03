@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add New Listing - Travel Booking App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Add New Listing</h1>
+  </header>
+
+  <main>
+    <form id="listing-form">
+      <label for="listing-type">Listing Type:</label>
+      <select id="listing-type" name="listing-type">
+        <option value="accommodation">Accommodation</option>
+        <option value="activity">Activity</option>
+      </select>
+
+      <label for="listing-name">Name:</label>
+      <input type="text" id="listing-name" name="listing-name" required>
+
+      <label for="listing-description">Description:</label>
+      <textarea id="listing-description" name="listing-description" required></textarea>
+
+      <label for="listing-price">Price:</label>
+      <input type="number" id="listing-price" name="listing-price" required>
+
+      <!-- Additional Fields -->
+      <!-- ... -->
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <!-- Fixed Navigation Bar -->
+  <nav class="nav-bottom">
+    <ul>
+      <li><a href="host.html">Dashboard</a></li>
+      <li><a href="add-listing.html">Add New Listing</a></li>
+      <li><a href="account.html">Account</a></li>
+    </ul>
+  </nav>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
