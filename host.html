@@ -10,6 +10,7 @@
     <h1>Travel Booking App</h1>
     <div id="host-welcome-message"></div>
   </header>
+
   <main>
     <!-- Host Dashboard -->
     <section id="host-dashboard">
@@ -24,44 +25,6 @@
           <button class="delete-btn">Delete</button>
         </div>
         <!-- Add more listing items as needed -->
-      </div>
-    </section>
-
-    <!-- Add New Listing Form -->
-    <section id="add-listing-form" class="modal">
-      <div class="modal-content">
-        <span class="close-btn">&times;</span>
-        <h2>Add New Listing</h2>
-        <form id="listing-form">
-          <label for="listing-type">Listing Type:</label>
-          <select id="listing-type" name="listing-type">
-            <option value="accommodation">Accommodation</option>
-            <option value="activity">Activity</option>
-          </select>
-
-          <label for="listing-name">Name:</label>
-          <input type="text" id="listing-name" name="listing-name" required>
-
-          <label for="listing-description">Description:</label>
-          <textarea id="listing-description" name="listing-description" required></textarea>
-
-          <label for="listing-price">Price:</label>
-          <input type="number" id="listing-price" name="listing-price" required>
-
-          <label for="listing-amenities">Amenities (for Accommodations):</label>
-          <input type="text" id="listing-amenities" name="listing-amenities">
-
-          <label for="listing-duration">Duration (for Activities):</label>
-          <input type="text" id="listing-duration" name="listing-duration">
-
-          <label for="listing-availability">Availability:</label>
-          <input type="date" id="listing-availability" name="listing-availability">
-
-          <label for="listing-photos">Photos:</label>
-          <input type="file" id="listing-photos" name="listing-photos" multiple>
-
-          <button type="submit">Submit</button>
-        </form>
       </div>
     </section>
 
@@ -92,7 +55,7 @@
     </section>
   </main>
 
-<!-- Fixed Navigation Bar -->
+  <!-- Fixed Navigation Bar -->
   <nav class="nav-bottom">
     <ul>
       <li><a href="host.html">Dashboard</a></li>
