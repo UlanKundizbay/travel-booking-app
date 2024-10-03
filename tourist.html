@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tourist Mode - Travel Booking App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Travel Booking App</h1>
+    <nav>
+      <ul>
+        <li><a href="tourist.html">Home</a></li>
+        <li><a href="#accommodations">Accommodations</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#" id="tourist-login-btn">Login/Sign Up</a></li>
+      </ul>
+    </nav>
+    <div id="tourist-welcome-message"></div>
+  </header>
+
+  <main>
+    <!-- Search Bar -->
+    <section class="search-bar">
+      <input type="text" placeholder="Enter Destination">
+      <input type="date">
+      <input type="date">
+      <button>Search</button>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section id="featured-destinations">
+      <h2>Featured Destinations in Kazakhstan</h2>
+      <!-- Placeholder images and text -->
+      <div class="destinations">
+        <div class="destination-item">
+          <img src="https://via.placeholder.com/150" alt="Destination">
+          <h3>Almaty</h3>
+        </div>
+        <!-- Add more destination items as needed -->
+      </div>
+    </section>
+
+    <!-- Accommodations -->
+    <section id="accommodations">
+      <h2>Accommodations</h2>
+      <!-- Filters -->
+      <div class="filters">
+        <select>
+          <option>Price Range</option>
+        </select>
+        <select>
+          <option>Accommodation Type</option>
+        </select>
+        <select>
+          <option>User Ratings</option>
+        </select>
+      </div>
+      <!-- Accommodation Listings -->
+      <div class="listings">
+        <div class="listing-item">
+          <img src="https://via.placeholder.com/150" alt="Accommodation">
+          <h3>Hotel Kazakhstan</h3>
+          <p>Price: $100/night</p>
+          <p>Rating: ★★★★☆</p>
+          <button class="details-btn">View Details</button>
+        </div>
+        <!-- Add more listing items as needed -->
+      </div>
+    </section>
+
+    <!-- Activities -->
+    <section id="activities">
+      <h2>Activities</h2>
+      <!-- Activity Listings -->
+      <div class="listings">
+        <div class="listing-item">
+          <img src="https://via.placeholder.com/150" alt="Activity">
+          <h3>City Tour</h3>
+          <p>Price: $50</p>
+          <p>Duration: 4 hours</p>
+          <p>Rating: ★★★★☆</p>
+          <button class="details-btn">View Details</button>
+        </div>
+        <!-- Add more activity items as needed -->
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+      <h2>User Reviews</h2>
+      <div class="review-item">
+        <p>"Great experience!" - Jane Doe</p>
+        <p>Rating: ★★★★★</p>
+      </div>
+      <!-- Add more review items as needed -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Travel Booking App Prototype</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
