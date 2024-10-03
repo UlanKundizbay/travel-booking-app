@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Host Mode - Travel Booking App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Travel Booking App</h1>
+    <nav>
+      <ul>
+        <li><a href="host.html">Dashboard</a></li>
+        <li><a href="#" id="add-listing-btn">Add New Listing</a></li>
+        <li><a href="#" id="host-login-btn">Login</a></li>
+      </ul>
+    </nav>
+    <div id="host-welcome-message"></div>
+  </header>
+
+  <main>
+    <!-- Host Dashboard -->
+    <section id="host-dashboard">
+      <h2>Your Listings</h2>
+      <!-- Listing Items -->
+      <div class="listings">
+        <div class="listing-item">
+          <h3>Cozy Apartment</h3>
+          <p>Bookings: 10</p>
+          <p>Rating: ★★★★☆</p>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+        </div>
+        <!-- Add more listing items as needed -->
+      </div>
+    </section>
+
+    <!-- Add New Listing Form -->
+    <section id="add-listing-form" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Add New Listing</h2>
+        <form id="listing-form">
+          <label for="listing-type">Listing Type:</label>
+          <select id="listing-type" name="listing-type">
+            <option value="accommodation">Accommodation</option>
+            <option value="activity">Activity</option>
+          </select>
+
+          <label for="listing-name">Name:</label>
+          <input type="text" id="listing-name" name="listing-name" required>
+
+          <label for="listing-description">Description:</label>
+          <textarea id="listing-description" name="listing-description" required></textarea>
+
+          <label for="listing-price">Price:</label>
+          <input type="number" id="listing-price" name="listing-price" required>
+
+          <label for="listing-amenities">Amenities (for Accommodations):</label>
+          <input type="text" id="listing-amenities" name="listing-amenities">
+
+          <label for="listing-duration">Duration (for Activities):</label>
+          <input type="text" id="listing-duration" name="listing-duration">
+
+          <label for="listing-availability">Availability:</label>
+          <input type="date" id="listing-availability" name="listing-availability">
+
+          <label for="listing-photos">Photos:</label>
+          <input type="file" id="listing-photos" name="listing-photos" multiple>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Booking Management -->
+    <section id="booking-management">
+      <h2>Upcoming Bookings</h2>
+      <!-- Booking Items -->
+      <div class="booking-item">
+        <p>Guest: Alice Smith</p>
+        <p>Check-in: 2023-12-01</p>
+        <p>Check-out: 2023-12-05</p>
+        <p>Contact: alice@example.com</p>
+        <button class="confirm-btn">Confirm</button>
+        <button class="cancel-btn">Cancel</button>
+      </div>
+      <!-- Add more booking items as needed -->
+    </section>
+
+    <!-- Review Management -->
+    <section id="host-reviews">
+      <h2>Reviews</h2>
+      <div class="review-item">
+        <p>"Lovely place!" - Bob Johnson</p>
+        <p>Rating: ★★★★★</p>
+        <button class="respond-btn">Respond</button>
+      </div>
+      <!-- Add more review items as needed -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Travel Booking App Prototype</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
