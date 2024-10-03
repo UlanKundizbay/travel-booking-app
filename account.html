@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Account - Travel Booking App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Account Management</h1>
+  </header>
+
+  <main>
+    <!-- Account Options -->
+    <section id="account-options">
+      <h2>Login or Sign Up</h2>
+      <!-- Mock Login Form -->
+      <form id="login-form">
+        <label for="user-role">I am a:</label>
+        <select id="user-role" name="user-role">
+          <option value="tourist">Tourist</option>
+          <option value="host">Host</option>
+        </select>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <button type="submit">Login</button>
+      </form>
+
+      <!-- Mode Switch -->
+      <h2>Switch Mode</h2>
+      <button id="switch-mode-btn">Switch to Host Mode</button>
+    </section>
+  </main>
+
+  <!-- Fixed Navigation Bar -->
+  <nav class="nav-bottom">
+    <ul>
+      <li><a href="tourist.html">Home</a></li>
+      <li><a href="account.html">Account</a></li>
+    </ul>
+  </nav>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
